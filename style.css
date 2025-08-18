@@ -17,6 +17,7 @@
 body {
     object-fit: cover;
     background-color: var(--bg);
+    font-family: "Lato", sans-serif;
 }
 /* navbar */
 .navbar {
@@ -35,9 +36,12 @@ body {
 .navbar h1 {
     color: var(--primary);
     font-size: 2.3rem;
+    font-weight: 100;
+    font-family: "Pacifico", cursive;
 }
 .navbar .navbar-nav a {
     display: inline-block;
     margin: 0 0.8rem;
     font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
 }
