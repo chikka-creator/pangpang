@@ -26,22 +26,58 @@ body {
     right: 0;
     left: 0;
     z-index: 98;
-    background-color: rgba(1, 1, 3, 0.3);
-    backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 5%;
 }
 .navbar h1 {
-    color: var(--primary);
-    font-size: 2.3rem;
+    color: var(--secondary-primary);
+    text-shadow: 1px 3px 2px var(--primary);
+    font-size: 2.8rem;
     font-weight: 100;
     font-family: "Pacifico", cursive;
+    font-style: italic;
 }
 .navbar .navbar-nav a {
     display: inline-block;
     margin: 0 0.8rem;
     font-size: 1.3rem;
     font-family: "Playfair Display", serif;
+}
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: url(img/hero-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.hero .content {
+    margin-left: 3rem;
+    max-width: 30rem;
+    text-shadow: 1px 1px 3px black;
+}
+.hero .content h1 {
+    font-size: 3.4rem;
+    font-family: "playfair display", serif;
+    line-height: 3.5rem;
+}
+.hero .content h1 span {
+    color: var(--secondary-primary);
+    text-shadow: 1px 2px 3px var(--primary);
+    font-style: italic;
+}
+.hero .content p {
+    font-weight: 300;
+    margin: 1rem 0 2rem;
+}
+.hero .content .cta {
+    background-color: var(--primary);
+    border: var(--secondary-primary) 2px solid;
+    padding: 1rem 15%;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
 }
