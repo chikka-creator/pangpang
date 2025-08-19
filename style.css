@@ -82,3 +82,17 @@ body {
     border-radius: 0.3rem;
     font-size: 1.2rem;
 }
+.Menu img {
+    width: 300px;
+    border-radius: 20px;   
+}
+.Menu {
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+img {
+    margin: 30px;
+}
