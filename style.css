@@ -45,54 +45,71 @@ body {
     font-size: 1.3rem;
     font-family: "Playfair Display", serif;
 }
+.navbar .navbar-nav a:hover {
+    color: var(--secondary-primary);
+}
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--secondary-primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
 /* Hero section */
 .hero {
-    height: 100vh;
-    background: url(img/hero-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, rgba(30, 0, 40, 0.9), rgba(10, 10, 20, 0.9));
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 0 20px;
 }
-.hero .content {
-    margin-left: 3rem;
-    max-width: 30rem;
-    text-shadow: 1px 1px 3px black;
-}
-.hero .content h1 {
-    font-size: 3.4rem;
-    font-family: "playfair display", serif;
-    line-height: 3.5rem;
-    text-shadow: 0 0 15px 10px var(--bg);
-}
-.hero .content h1 span {
-    color: var(--secondary-primary);
-        text-shadow: 0 0 15px 10px var(--bg);
-    font-style: italic;
-}
-.hero .content p {
-    font-weight: 300;
-    margin: 1rem 0 2rem;
-}
-.hero .content .cta {
-    background-color: var(--primary);
-    border: var(--secondary-primary) 2px solid;
-    padding: 1rem 15%;
-    border-radius: 0.3rem;
-    font-size: 1.2rem;
-}
-.Menu img {
-    width: 300px;
-    border-radius: 20px;   
-}
-.Menu {
-    min-height: 100vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 
+/* Konten Hero */
+.hero-content {
+  max-width: 800px;
 }
-img {
-    margin: 30px;
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #e6d4ff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Tombol CTA */
+.hero .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #b084f7;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(176, 132, 247, 0.4);
+}
+
+.hero .btn:hover {
+  background: #9c6ff0;
+  transform: translateY(-3px);
+}
+
